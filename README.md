@@ -1,2 +1,2 @@
 # AI-webscraper
-AI used for webscraping
+This repo has created a web scraper using both AI (ChatGPT API) and the beautifulSoup library
