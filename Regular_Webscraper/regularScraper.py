@@ -40,5 +40,4 @@ class CurrentElectricityPriceTrondheim:
 
         '''
         self.info = self.soup.find("p", class_ = 'h1 mb-0').text.split()
-        self.priceNowTrondheim = float(self.info[5])
-
+        self.priceNowTrondheim = float(self.info[5].replace(",","."))
