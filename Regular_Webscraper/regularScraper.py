@@ -82,10 +82,19 @@ class CurrentElectricityPriceTrondheim:
         b = sum([self.gaussian(x, p[1][2], p[0] * width, width/(spread*len(map))) for p in map])
         return min(1.0, r), min(1.0, g), min(1.0, b)
     
-    def saveCurrentPhoto(self):
+    def saveCurrentGradient(self):
+        '''
+        Saves the current color gradient to an image
+        '''
         self.im.save("Regular_Webscraper/Gradient.png")
+    
+    def getRGB(self):
+        '''
+        Function returns a tuple with the colors RGB values.
+        '''
+        return (self.red, self.green, self.blue)
 
 
-test = CurrentElectricityPriceTrondheim()
-test.getColorForPrice()
-print(test.red, " ", test.green, " ", test.blue)
+electricityPrice = CurrentElectricityPriceTrondheim()
+electricityPrice.getColorForPrice()
+print(electricityPrice.getRGB())
