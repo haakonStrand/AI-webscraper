@@ -20,7 +20,7 @@ electricityPrice = CurrentElectricityPriceTrondheim()
 
 electricityPrice.getColorForPrice()
 ```
-After running the `electricityPrice.getColorForPrice()` function, you will be able to get the rgb values by calling the 'getRGB()' function
+After running the `electricityPrice.getColorForPrice()` function, you will be able to get the rgb values by calling the `getRGB()` function
 
 ```
 RGB_color = getRGB() # Returns a tuple containing rgb values (red,green,blue)
